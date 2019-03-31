@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'g++ sample.cpp -o sample && ./sample'
+                sh 'g++ sample.cpp -o sample'
+                sh './sample'
             }
         }
     }
